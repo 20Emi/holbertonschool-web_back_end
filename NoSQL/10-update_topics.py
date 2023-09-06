@@ -10,4 +10,3 @@ def update_topics(mongo_collection, name, topics):
     filter_ = {'name': name}
     new_data = {'$set': {'topics': topics}}
     result = mongo_collection.update_many(filter_, new_data)
-    return result
