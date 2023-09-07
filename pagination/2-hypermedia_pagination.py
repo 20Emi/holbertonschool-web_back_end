@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
 """Task 2"""
 
-#!/usr/bin/env python3
-"""Task 1"""
-
-
-
 
 import csv
 import math
 from typing import List
 import math
+
+
 class Server:
     """Server class to paginate a database of popular baby names.
     """
