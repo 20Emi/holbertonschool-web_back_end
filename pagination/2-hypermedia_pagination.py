@@ -60,15 +60,15 @@ class Server:
         total_pages = math.ceil(page_size / len(self.dataset()))
         #  number of the next page, None if no next page
         if page > total_pages:
-            next_page = None
-        else:
             next_page = page + 1
+        else:
+            next_page = None
 
         # number of the previous page, None if no previous page
-        if page > 1:
-            prev_page = page - 1
-        else:
+        if page - 1 < 1:
             prev_page = None
+        else:
+            prev_page = page - 1
 
         # result dictionary
         result = {
