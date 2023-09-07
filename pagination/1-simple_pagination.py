@@ -26,7 +26,11 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-
+        """
+        Use assert to verify that both arguments are integers greater than 0.
+        page1[0]:represents the start index of the range.
+        page1[1]: represents the end index of the range.
+        """
         assert isinstance(page, int)
         assert page > 0
         assert isinstance(page_size, int)
